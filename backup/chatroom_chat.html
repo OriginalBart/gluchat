@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/chatroom_chat.css" />
+    <title>Chatroom</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+  />
+  </head>
+  <body>
+    <header>
+      <p class="enter">Enter Chatbox</p>
+      <p class="chatrooms">Chatrooms<br><p class="room">Get a room Nickname!</p></p>
+      <p class="header_nickname">#Nickname</p>  
+      <div id="menuToggle">
+        <!--
+        A fake / hidden checkbox is used as click reciever,
+        so you can use the :checked selector on it.
+        -->
+        <input type="checkbox" />
+        
+        <!--
+        Some spans to act as a hamburger.
+        
+        They are acting like a real hamburger,
+        not that McDonalds stuff.
+        -->
+        <span></span>
+        <span></span>
+        <span></span>
+        
+        <!--
+        Too bad the menu has to be inside of the button
+        but hey, it's pure CSS magic.
+        -->
+        <ul id="menu">
+          <a href="#"><li>ROOMS</li></a>
+          <a href="#"><li>USERS</li></a>
+          <a href="#"><li>QUIT</li></a>
+           </ul>
+      </div>
+      <nav>
+        <ul>
+          <li class="quit"><a href="#">QUIT</a></li>
+          <li class="users"><a href="#">USERS</a></li>
+          <li class="rooms"><a href="#">ROOMS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="main_left">
+        <a href="#">
+        <div class="msg1">
+          <p class="headmsg">Chillout Place</p>
+          <br />
+          <br />
+          <p class="darkmsg">Don't worry, be chatty</p>
+        </a>
+        </div>
+        <a href="#">
+        <div class="msg2">
+          <p class="headmsg">Nightlife</p>
+          <br />
+          <br />
+          <p class="darkmsg">Where you at tonight?</p>
+        </a>
+        </div>
+        <a href="#">
+        <div class="msg3">
+          <p class="headmsg">Series & Movies</p>
+          <br />
+          <br />
+          <p class="darkmsg">Hey! What you looking at?</p>
+        </a>
+        </div>
+        <a href="#">
+        <div class="msg4">
+          <p class="headmsg">Sports</p>
+          <br />
+          <br />
+          <p class="darkmsg">Stay in shape</p>
+        </a>
+        </div>
+          <div class="msg1_mobile">
+            <p class="headmsg_mobile">Andrea</p>
+            <br />
+            <p class="darkmsg_mobile">Moment Please... Just have to pee. I will <br> be back shortly...</p>
+            <br>
+            <p class="time">18:15</p>
+          </div>
+          <div class="msg2_mobile">
+            <p class="headmsg_mobile">ThaBeast</p>
+            <br />
+            <p class="darkmsg_mobile">Ok I'll wait for you.</p>
+            <br>
+            <p class="time">18:16</p>
+          </div>
+          <div class="msg3_mobile">
+            <p class="headmsg_mobile">You</p>
+            <br />
+            <p class="darkmsg_mobile">Andrea? Stuck between the toiletpaper?</p>
+            <br>
+            <p class="time">18:36</p>
+          </div>
+          <div class="msg4_mobile">
+            <p class="headmsg_mobile">Rick</p>
+            <br />
+            <p class="darkmsg_mobile">She's been there for 15 minutes!</p>
+            <br>
+            <p class="time">18:37</p>
+          </div>
+          <div class="msg5_mobile">
+              <p class="headmsg_mobile">You</p>
+              <br />
+              <p class="darkmsg_mobile">20 already Rick.</p>
+              <br>
+              <p class="time">18:38</p>
+          </div>
+      </section>
+      <section id="main_right">
+        <div class="andrea">
+          <p class="title_chat">Andrea said @ 18:15</p>
+          <br>
+          <p class="title_chat">Just have to pee now, wait for me...</p>
+        </div>
+        <div class="rick1">
+          <p class="title_chat">Rick said @ 18:35</p>
+          <br>
+          <p class="title_chat">Andrea is a long time away now! Is everything oke? I a'm just writing this long but<br>useless piece of text because I just want to let you know what happens when someone<br>writes a long long piece of text.</p>
+        </div>
+        <div class="you1">
+          <p class="title_chat">You said @ 18:36</p>
+          <br>
+          <p class="title_chat">Andrea? Stuck between the toiletpaper?</p>
+        </div>
+        <div class="rick2">
+          <p class="title_chat">Rick said @ 18:37</p>
+          <br>
+          <p class="title_chat">She's been there for 15 minutes!</p>
+        </div>
+        <div class="you2">
+          <p class="title_chat">You said @ 18:38</p>
+          <br>
+          <p class="title_chat">20 already Rick.</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <form action="">
+        <input type="text" placeholder="Type your message" />
+        <button type="submit">
+          <i class="fas fa-share-square fa-inverse fa-lg"></i>
+        </button>
+      </form>
+    </footer>
+  </body>
+</html>
