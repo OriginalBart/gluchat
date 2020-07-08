@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users</title>
+    <link rel="stylesheet" href="assets/css/users.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <p class="enter">Users</p>
+      <p class="chatrooms">
+        Chatrooms<br />
+        <p class="room">Get a room Nickname!</p>
+      </p>
+      <p class="header_nickname">#Nickname</p>
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul id="menu">
+          <a href="chatroom.html"><li>ROOMS</li></a>
+          <a href="rooms.html"><li>USERS</li></a>
+          <a href="index.html"><li>QUIT</li></a>
+        </ul>
+      </div>
+      <nav>
+        <ul>
+          <li class="quit"><a href="index.html">QUIT</a></li>
+          <li class="users"><a href="rooms.html">USERS</a></li>
+          <li class="rooms"><a href="chatroom.html">ROOMS</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="main_left">
+        <h2>54 users online</h2>
+      </section>
+      <section id="main_right">
+        <ul class="list_left">
+          <li><img src="assets/img/green_dot.png" alt="green">MangoManny</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Cinderella</li>
+          <li><img src="assets/img/green_dot.png" alt="green">ThaBeast</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Ceesje</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Rick</li>
+          <li><img src="assets/img/orange_dot.png" alt="orange">Andrea</li>
+          <li><img src="assets/img/orange_dot.png" alt="orange">MissyMessy</li>
+          <li><img src="assets/img/red_dot.png" alt="red">Ferrari2001</li>
+          <li><img src="assets/img/green_dot.png" alt="green">MangoManny</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Cinderella</li>
+          <li><img src="assets/img/green_dot.png" alt="green">ThaBeast</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Ceesje</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Rick</li>
+          <li><img src="assets/img/orange_dot.png" alt="orange">Andrea</li>
+        </ul>
+        <ul class="list_right">
+          <li><img src="assets/img/green_dot.png" alt="green">MangoManny</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Cinderella</li>
+          <li><img src="assets/img/green_dot.png" alt="green">ThaBeast</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Ceesje</li>
+          <li><img src="assets/img/green_dot.png" alt="green">Rick</li>
+          <li><img src="assets/img/orange_dot.png" alt="orange">Andrea</li>
+          <li><img src="assets/img/orange_dot.png" alt="orange">MissyMessy</li>
+          <li><img src="assets/img/red_dot.png" alt="red">Ferrari2001</li>
+          <li><img src="assets/img/green_dot.png" alt="red">MangoManny</li>
+          <li><img src="assets/img/green_dot.png" alt="red">Cinderella</li>
+          <li><img src="assets/img/green_dot.png" alt="red">ThaBeast</li>
+          <li><img src="assets/img/green_dot.png" alt="red">Ceesje</li>
+        </ul>
+        <ul class="mobile_list">
+          <li>MangoManny</li>
+          <li>Cinderella</li>
+          <li>ThaBeast</li>
+          <li>Ceesje</li>
+          <li>Rick</li>
+          <li>Andrea</li>
+          <li>MissyMessy</li>
+          <li>Ferrari2001</li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_mobile">
+        <ul>
+          <a href="chatroom.html"><li class="rooms_icon"><i class="far fa-comment-alt"></i></li></a>
+          <a href="rooms.html"><li class="users_icon"><i class="fas fa-user-friends"></i></li></a>
+          <a href="index.html"><li class="quit_icon"><i class="fas fa-sign-out-alt"></i></li></a>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/main.js"></script>
+  </body>
+</html>

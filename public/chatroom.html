@@ -21,16 +21,16 @@
         <span></span>
         <span></span>
         <ul id="menu">
-          <a href="#"><li>ROOMS</li></a>
-          <a href="#"><li>USERS</li></a>
-          <a href="#"><li>QUIT</li></a>
+          <a href="chatroom.html"><li>ROOMS</li></a>
+          <a href="rooms.html"><li>USERS</li></a>
+          <a href="index.html"><li>QUIT</li></a>
            </ul>
       </div>
       <nav>
         <ul>
-          <li class="quit"><a href="#">QUIT</a></li>
-          <li class="users"><a href="#">USERS</a></li>
-          <li class="rooms"><a href="#">ROOMS</a></li>
+          <li class="quit"><a href="index.html">QUIT</a></li>
+          <li class="users"><a href="rooms.html">USERS</a></li>
+          <li class="rooms"><a href="chatroom.html">ROOMS</a></li>
         </ul>
       </nav>
     </header>
@@ -68,7 +68,8 @@
           <p class="darkmsg">Stay in shape</p>
         </a>
         </div>
-          <div class="msg1_mobile">
+        <ul id="messages"></ul>
+          <!-- <div class="msg1_mobile">
             <p class="headmsg_mobile">Andrea</p>
             <br />
             <p class="darkmsg_mobile">Moment Please... Just have to pee. I will <br> be back shortly...</p>
@@ -129,16 +130,20 @@
           <p class="title_chat">You said @ 18:38</p>
           <br>
           <p class="title_chat">20 already Rick.</p>
-        </div>
+        </div> -->
       </section>
     </main>
     <footer>
       <form action="">
-        <input type="text" placeholder="Type your message" />
-        <button type="submit">
+        <input id="m" autocomplete="off" type="text" class="form-control" placeholder="Message..."
+          aria-label="Message..." aria-describedby="button-addon2" />
+        <button type="submit" id="submit">
           <i class="fas fa-share-square fa-inverse fa-lg"></i>
         </button>
       </form>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/main.js"></script>
   </body>
 </html>
